@@ -42,10 +42,12 @@ export const GlobalStyle = createGlobalStyle`
 	
 	h1, h2, h3, h4, h5, h6, strong {
 		font-weight: 600;
+    line-height: 100%
 	}
 
   button {
     cursor: pointer;
+    font-size: 1rem;
   }
 
   [disabled] {
