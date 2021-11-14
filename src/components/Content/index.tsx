@@ -1,7 +1,8 @@
 import { Container, Hero, Texts, Photos } from "./styles";
+import { Information } from "../Information";
 
-import gaulesCirclePhotoImg from "../../assets/GaulesCirclePhoto.png"
-import pglCircleLogoImg from "../../assets/PglCircleLogo.png"
+import gaulesCirclePhotoImg from "../../assets/GaulesCirclePhoto.png";
+import pglCircleLogoImg from "../../assets/PglCircleLogo.png";
 
 export const Content = () => {
   return (
@@ -23,6 +24,8 @@ export const Content = () => {
           <img src={pglCircleLogoImg} alt="PGL Stockholm 2021 Major" />
         </Photos>
       </Hero>
+
+      <Information />
     </Container>
   );
 };
