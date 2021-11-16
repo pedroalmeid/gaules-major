@@ -33,6 +33,7 @@ export const Wrapper = styled.div`
 
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 0.5rem;
 
     transition: filter 0.2s;

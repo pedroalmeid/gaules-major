@@ -14,7 +14,7 @@ export const Header = () => {
           <span>PGL Major Stockholm 2021</span>
         </div>
         <a href="https://www.twitch.tv/gaules" target="_blank" rel="noreferrer">
-          <BsTwitch size="24px" color="0090D9" />
+          <BsTwitch size="32px" color="0090D9" />
           <p>Ao vivo</p>
         </a>
       </Wrapper>
