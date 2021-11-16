@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   margin-top: 5.5rem;
+  padding-bottom: 9rem;
   
   h2 {
     color: var(--heliotrope-purple);
@@ -16,12 +17,19 @@ export const Container = styled.section`
 `;
 
 export const Dates = styled.table`
-  max-width: 21rem;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 21rem;
 
   tr {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+
+    td p {
+      text-align: right;
+    }
   }
 `
