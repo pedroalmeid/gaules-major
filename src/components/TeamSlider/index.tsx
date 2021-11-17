@@ -3,7 +3,7 @@ import { request } from "graphql-request";
 
 import { Slider } from "./styles";
 
-interface ITeam {
+export interface ITeam {
   id: string;
   logo: {
     url: string;
