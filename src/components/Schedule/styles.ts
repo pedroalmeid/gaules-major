@@ -1,12 +1,16 @@
 import styled from "styled-components";
 
-export const Container = styled.section`
+type ScheduleProps = {
+  mainStream: boolean;
+}
+
+export const Container = styled.section<ScheduleProps>`
   padding: 5rem 0;
-  background: var(--xiketic-blue);
+  background: ${props => props.mainStream ? "var(--xiketic-blue)" : "var(--honolulu-blue)"};
   width: 100%;
 `;
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div<ScheduleProps>`
   width: 90%;
   max-width: 64rem;
   margin: 0 auto;
@@ -32,7 +36,7 @@ export const Wrapper = styled.div`
       align-items: center;
       gap: 1rem;
       text-decoration: none;
-      color: var(--crayola-blue);
+      color: ${props => props.mainStream ? "var(--crayola-blue)" : "white"};
       font-size: 1rem;
       font-weight: 600;
       transition: filter 0.2s;

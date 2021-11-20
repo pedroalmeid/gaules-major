@@ -8,16 +8,20 @@ export const Container = styled.div`
   gap: 2rem;
 `;
 
-export const GameDay = styled.div`
+type GameDayProps = {
+  mainStream: boolean;
+}
+
+export const GameDay = styled.div<GameDayProps>`
   display: flex;
   flex: 1;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
 
   header {
     font-size: 1.125rem;
     font-weight: 200;
-    color: var(--space-blue);
+    color: ${props => props.mainStream ? "var(--space-blue)" : "var(--silver)"};
     text-decoration: underline;
     margin-bottom: 2.5rem;
   }

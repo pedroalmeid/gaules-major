@@ -17,7 +17,11 @@ interface IGameDay {
   matches: IMatch[];
 }
 
-export const Matches = () => {
+interface IMatchesProps {
+  mainStream: boolean;
+}
+
+export const Matches = ({ mainStream }: IMatchesProps) => {
   const [gameDays, setGameDays] = useState<IGameDay[]>([]);
 
   useEffect(() => {
@@ -29,7 +33,7 @@ export const Matches = () => {
           gameDays {
             id
             date
-            matches(where: {mainStream: true}) {
+            matches(where: {mainStream: ${mainStream}}) {
               id
               time
               teams {
@@ -48,14 +52,12 @@ export const Matches = () => {
     };
 
     fetchGameDays();
-  }, []);
-
-  console.log(gameDays);
+  }, [mainStream]);
 
   return (
     <Container>
       {gameDays.map((gameDay) => (
-        <GameDay>
+        <GameDay mainStream={mainStream}>
           <header>
             {new Date(gameDay.date).getUTCDate()}/
             {new Date(gameDay.date).getMonth()}

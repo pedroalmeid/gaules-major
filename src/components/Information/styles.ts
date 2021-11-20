@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.section`
   margin-top: 5.5rem;
   padding-bottom: 9rem;
-  
+
   h2 {
     color: var(--heliotrope-purple);
     text-align: center;
@@ -13,7 +13,6 @@ export const Container = styled.section`
   div:last-child {
     margin-top: 7rem;
   }
-
 `;
 
 export const Dates = styled.table`
@@ -32,4 +31,4 @@ export const Dates = styled.table`
       text-align: right;
     }
   }
-`
+`;

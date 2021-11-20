@@ -26,7 +26,6 @@ export const Content = () => {
       </Hero>
 
       <Information />
-
     </Container>
   );
 };

@@ -1,32 +1,39 @@
 import { Container, Wrapper } from "./styles";
 
-import {Matches} from "../Matches"
+import { Matches } from "../Matches";
 
 import { BsTwitch } from "react-icons/bs";
 
-import gaulesIconImg from "../../assets/GaulesIcon.png";
+interface IScheduleProps {
+  logo: string;
+  title: string;
+  twitchLink: string;
+  description: string;
+  mainStream: boolean;
+}
 
-export const Schedule = () => {
+export const Schedule = (props: IScheduleProps) => {
   return (
-    <Container>
-      <Wrapper>
+    <Container mainStream={props.mainStream}>
+      <Wrapper mainStream={props.mainStream}>
         <header>
           <div>
-            <img src={gaulesIconImg} alt="Gaules" />
-            <h2>O Nosso Cronograma</h2>
+            <img src={props.logo} alt={props.twitchLink} />
+            <h2>{props.title}</h2>
           </div>
-          <a href="https://twitch.tv/gaules" target="_blank" rel="noreferrer">
-            <span>twitch.tv/gaules</span>
-            <BsTwitch size="24px" color="0090D9" />
+          <a
+            href={`https://${props.twitchLink}`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span>{props.twitchLink}</span>
+            <BsTwitch size="24px" color={props.mainStream ? "#0090D9" : "#FFFFFF"} />
           </a>
         </header>
 
-        <p>
-          Acompanhe as principais partidas e os jogos dos times brasileirinhos
-          nas Watch Parties mais divertidas, engraçadas e torcedoras!{" "}
-        </p>
+        <p>{props.description}</p>
 
-        <Matches />
+        <Matches mainStream={props.mainStream} />
       </Wrapper>
     </Container>
   );

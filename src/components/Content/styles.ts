@@ -20,12 +20,11 @@ export const Texts = styled.div`
 
     span {
       color: var(--crayola-blue);
-    } 
+    }
   }
 
   p {
     margin-top: 2rem;
-
   }
 `;
 
@@ -33,8 +32,7 @@ export const Photos = styled.div`
   flex: 4;
   display: grid;
   justify-content: flex-end;
-  
-  
+
   img:last-child {
     margin-top: -9rem;
     margin-left: 7.25rem;

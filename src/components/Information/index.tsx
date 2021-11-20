@@ -32,7 +32,9 @@ export const Information = () => {
           </tr>
           <tr>
             <td>
-              <label>Champions Stage <br/> (Playoffs)</label>
+              <label>
+                Champions Stage <br /> (Playoffs)
+              </label>
             </td>
             <td>
               <p>De 04/11/2021</p>
