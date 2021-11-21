@@ -1,6 +1,8 @@
 import { Header } from "./components/Header";
 import { Content } from "./components/Content";
 import { Schedule } from "./components/Schedule";
+import { Tournament } from "./components/Tournament";
+import { Footer } from "./components/Footer";
 
 import { GlobalStyle } from "./styles/global";
 
@@ -26,6 +28,8 @@ export const App = () => {
         description="Com jogos alternativos e transmissões voltadas à narração e comentários profissionais, veja as streams do nosso canal secundário."
         mainStream={false}
       />
+      <Tournament />
+      <Footer />
       <GlobalStyle />
     </div>
   );

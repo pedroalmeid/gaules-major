@@ -10,7 +10,7 @@ export const Container = styled.div`
 
 type GameDayProps = {
   mainStream: boolean;
-}
+};
 
 export const GameDay = styled.div<GameDayProps>`
   display: flex;
@@ -21,7 +21,8 @@ export const GameDay = styled.div<GameDayProps>`
   header {
     font-size: 1.125rem;
     font-weight: 200;
-    color: ${props => props.mainStream ? "var(--space-blue)" : "var(--silver)"};
+    color: ${(props) =>
+      props.mainStream ? "var(--space-blue)" : "var(--silver)"};
     text-decoration: underline;
     margin-bottom: 2.5rem;
   }

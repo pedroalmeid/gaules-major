@@ -15,15 +15,6 @@ export const Wrapper = styled.div`
   max-width: 64rem;
   margin: 0 auto;
 
-  div {
-    display: flex;
-    gap: 1rem;
-
-    span {
-      font-weight: 600;
-    }
-  }
-
   a {
     text-decoration: none;
     background: #fff;

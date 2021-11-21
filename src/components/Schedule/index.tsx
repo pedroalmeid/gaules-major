@@ -27,7 +27,10 @@ export const Schedule = (props: IScheduleProps) => {
             rel="noreferrer"
           >
             <span>{props.twitchLink}</span>
-            <BsTwitch size="24px" color={props.mainStream ? "#0090D9" : "#FFFFFF"} />
+            <BsTwitch
+              size="1.5rem"
+              color={props.mainStream ? "#0090D9" : "#FFFFFF"}
+            />
           </a>
         </header>
 
