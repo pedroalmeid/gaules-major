@@ -5,6 +5,11 @@ export const Container = styled.header`
   width: 100%;
   height: 5rem;
   display: flex;
+
+  @media (max-width: 565px) {
+    height: auto;
+    padding: 2rem 0;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -36,5 +41,10 @@ export const Wrapper = styled.div`
     &:hover {
       filter: brightness(0.9);
     }
+  }
+
+  @media (max-width: 565px) {
+    flex-direction: column;
+    gap: 1rem;
   }
 `;

@@ -9,8 +9,6 @@ export const Container = styled.section`
   justify-content: space-between;
 
   div {
-    padding-top: 2.5rem;
-
     h2 {
       font-size: 2rem;
       font-weight: 600;
@@ -21,6 +19,7 @@ export const Container = styled.section`
       display: flex;
       gap: 3rem;
       align-items: center;
+      flex-wrap: wrap;
 
       a {
         height: 2.5rem;
@@ -44,6 +43,26 @@ export const Container = styled.section`
           filter: brightness(0.7);
         }
       }
+    }
+  }
+
+  @media (max-width: 1290px) {
+    flex-direction: column-reverse;
+
+    h2 {
+      margin-top: -5rem;
+      text-align: center;
+    }
+
+    nav {
+      justify-content: center;
+      margin-bottom: 8rem;
+    }
+  }
+
+  @media (max-width: 670px) {
+    img#tournament-logo {
+      width: 65%;
     }
   }
 `;

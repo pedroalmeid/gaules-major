@@ -9,6 +9,14 @@ export const Container = styled.section`
 export const Hero = styled.div`
   display: flex;
   padding-top: 3rem;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+  }
 `;
 
 export const Texts = styled.div`
@@ -36,5 +44,25 @@ export const Photos = styled.div`
   img:last-child {
     margin-top: -9rem;
     margin-left: 7.25rem;
+  }
+
+  @media (max-width: 800px) {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+
+    img:last-child {
+      margin-top: 0;
+      margin-left: -2rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+
+    img:last-child {
+      margin-top: -4rem;
+      margin-left: 0;
+    }
   }
 `;

@@ -7,4 +7,9 @@ export const Container = styled.div`
   span {
     font-weight: 600;
   }
+
+  @media (max-width: 400px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;

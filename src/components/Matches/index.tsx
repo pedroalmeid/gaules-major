@@ -33,7 +33,7 @@ export const Matches = ({ mainStream }: IMatchesProps) => {
           gameDays {
             id
             date
-            matches(where: {mainStream: ${mainStream}}) {
+            matches(where: {mainStream: ${mainStream}}, orderBy: time_ASC) {
               id
               time
               teams {

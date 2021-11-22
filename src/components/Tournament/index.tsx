@@ -26,7 +26,7 @@ export const Tournament = () => {
           </a>
         </nav>
       </div>
-      <img src={majorLogoImg} alt="PGL Major Stockholm 2021" />
+      <img src={majorLogoImg} alt="PGL Major Stockholm 2021" id="tournament-logo"/>
     </Container>
   );
 };

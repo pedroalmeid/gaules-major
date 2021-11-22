@@ -46,6 +46,11 @@ export const Wrapper = styled.div<ScheduleProps>`
         filter: brightness(0.65);
       }
     }
+
+    @media (max-width: 650px) {
+      flex-direction: column;
+      gap: 2rem;
+    }
   }
 
   p {
@@ -53,5 +58,9 @@ export const Wrapper = styled.div<ScheduleProps>`
     font-weight: 400;
     margin-top: 3rem;
     margin-bottom: 4rem;
+
+    @media (max-width: 650px) {
+      text-align: center;
+    }
   }
 `;

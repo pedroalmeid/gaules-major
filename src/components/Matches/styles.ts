@@ -6,6 +6,14 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   gap: 2rem;
+
+  @media (max-width: 840px) {
+    flex-wrap: wrap;
+  }
+  @media (max-width: 410px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 type GameDayProps = {
