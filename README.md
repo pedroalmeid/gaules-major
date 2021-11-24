@@ -18,9 +18,9 @@ Thinking about a real use case and even to study how the structures and tools of
 
 In this way, the data can be consumed to form the area of the page that presents the teams and also to form the match schedules, organized by days and showing the times and teams for each match.
 
-<img src="./public/assets/team-model.png">
-<img src="./public/assets/match-model.png">
-<img src="./public/assets/gameday-model.png">
+<img src="./public/assets/team-model.PNG">
+<img src="./public/assets/match-model.PNG">
+<img src="./public/assets/gameday-model.PNG">
 
 <br>
 
