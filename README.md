@@ -26,7 +26,7 @@ In this way, the data can be consumed to form the area of the page that presents
 
 ### Built With:
 
-- []()JavaScript
+- []()TypeScript
 - []()HTML5
 - []()ReactJS(create-react-app)
 - []()Styled Components
